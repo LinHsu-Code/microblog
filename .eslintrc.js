@@ -4,9 +4,16 @@ module.exports = {
     commonjs: true,
     es2021: true,
   },
-  extends: ["airbnb-base", "prettier"],
+  extends: ['airbnb-base', 'prettier', 'airbnb', 'plugin:jest/recommended'],
   parserOptions: {
-    ecmaVersion: "latest",
+    ecmaVersion: 'latest',
   },
-  rules: {},
+  // plugins: ['jest'],
+  rules: {
+    // 'jest/no-disabled-tests': 'warn',
+    // 'jest/no-focused-tests': 'error',
+    // 'jest/no-identical-title': 'error',
+    // 'jest/prefer-to-have-length': 'warn',
+    // 'jest/valid-expect': 'error',
+  },
 };
